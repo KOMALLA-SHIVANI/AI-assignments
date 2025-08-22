@@ -1,0 +1,7 @@
+Comparison:
+Best First Search (Greedy) expands the node that looks closest to the goal according to the heuristic only. This makes it fast and memory efficient in practice. However, since it ignores the actual path cost traveled so far, it can produce suboptimal solutions or even fail to find the shortest path.
+
+A* Search, on the other hand, combines both the cost from the start node (g) and the estimated cost to the goal (h). With an admissible and consistent heuristic (Chebyshev distance for 8-directional movement), A* always guarantees the shortest possible path if one exists. The trade-off is that A* is generally slower and requires more memory than Best First Search, since it explores more nodes.
+
+Conclusion:
+Best First Search is faster but may not always give the optimal result. A* is more computationally expensive, but it is reliable and ensures the shortest path length. In practice, A* is preferred when accuracy is critical, while Best First is useful when speed matters more.
